@@ -6,7 +6,7 @@ import { multi } from './data';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   multi: any[];
@@ -18,20 +18,21 @@ export class AppComponent {
   gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Country';
+  xAxisLabel: string = 'Vue Generale';
   showYAxisLabel: boolean = true;
-  yAxisLabel: string = 'Population';
+  yAxisLabel: string = 'Nombre Equipement';
   legendTitle: string = 'Years';
+  showleagend: boolean = true;
 
   colorScheme = {
-    domain: ['#5AA454', '#C7B42C', '#AAAAAA']
+    domain: ['#5AA454', '#C7B42C', '#AAAAAA', '#C7B42C'],
   };
 
   constructor() {
-    Object.assign(this, { multi })
+    Object.assign(this, { multi });
   }
 
- onSelect(data): void {
+  onSelect(data): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
   }
 

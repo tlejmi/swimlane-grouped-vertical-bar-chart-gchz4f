@@ -1,44 +1,87 @@
 export var multi = [
   {
-    "name": "Germany",
-    "series": [
+    name: 'Semaine 1',
+    series: [
       {
-        "name": "2010",
-        "value": 7300000
+        name: 'En Production',
+        value: 80,
       },
       {
-        "name": "2011",
-        "value": 8940000
-      }
-    ]
+        name: 'En Mainteanance',
+        value: 20,
+      },
+      {
+        name: 'Inactive',
+        value: 20,
+      },
+      {
+        name: 'Spare',
+        value: 10,
+      },
+    ],
+  },
+  {
+    name: 'Semaine 2',
+    series: [
+      {
+        name: 'En Production',
+        value: 60,
+      },
+      {
+        name: 'En Mainteanance',
+        value: 20,
+      },
+      {
+        name: 'Inactive',
+        value: 10,
+      },
+      {
+        name: 'Spare',
+        value: 1,
+      },
+    ],
   },
 
   {
-    "name": "USA",
-    "series": [
+    name: 'Semaine 3',
+    series: [
       {
-        "name": "2010",
-        "value": 7870000
+        name: 'En Production',
+        value: 10,
       },
       {
-        "name": "2011",
-        "value": 8270000
-      }
-    ]
+        name: 'En Mainteanance',
+        value: 10,
+      },
+      {
+        name: 'Inactive',
+        value: 25,
+      },
+      {
+        name: 'Spare',
+        value: 10,
+      },
+    ],
   },
-
   {
-    "name": "France",
-    "series": [
+    name: 'Semaine 4',
+    series: [
       {
-        "name": "2010",
-        "value": 5000002
+        name: 'En Production',
+        value: 80,
       },
       {
-        "name": "2011",
-        "value": 5800000
-      }
-    ]
-  }
+        name: 'En Mainteanance',
+        value: 20,
+      },
+      {
+        name: 'Inactive',
+        value: 20,
+      },
+      {
+        name: 'Spare',
+        value: 10,
+      },
+    ],
+  },
 ];
-
