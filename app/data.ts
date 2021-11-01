@@ -5,6 +5,9 @@ export var multi = [
       {
         name: 'En Production',
         value: 80,
+        extra: {
+          name: 'Prod',
+        },
       },
       {
         name: 'En Mainteanance',
