@@ -2,7 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 //import { multiData } from './newData';
-import * as SampleJson from './file.json';
+import * as DataJson from './file.json';
 
 @Component({
   selector: 'my-app',
@@ -13,7 +13,7 @@ export class AppComponent {
   multiData: any;
 
   //multi: any[] = multiData.data;
-  multi: any = SampleJson.data;
+  multi: any = DataJson.data;
   view: any[] = [700, 400];
 
   // options
@@ -22,9 +22,9 @@ export class AppComponent {
   gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = SampleJson.name;
+  xAxisLabel: string = DataJson.name;
   showYAxisLabel: boolean = true;
-  yAxisLabel: string = 'Nombre Equipement';
+  yAxisLabel: string = 'Nombre Equipements';
   legendTitle: string = 'Years';
   showleagend: boolean = true;
 
