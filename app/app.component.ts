@@ -1,7 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { multi } from './data';
+//import { multiData } from './newData';
+import * as SampleJson from './file.json';
 
 @Component({
   selector: 'my-app',
@@ -9,7 +10,10 @@ import { multi } from './data';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  multi: any[];
+  multiData: any;
+
+  //multi: any[] = multiData.data;
+  multi: any = SampleJson.data;
   view: any[] = [700, 400];
 
   // options
@@ -18,7 +22,7 @@ export class AppComponent {
   gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Vue Generale';
+  xAxisLabel: string = SampleJson.name;
   showYAxisLabel: boolean = true;
   yAxisLabel: string = 'Nombre Equipement';
   legendTitle: string = 'Years';
@@ -28,9 +32,7 @@ export class AppComponent {
     domain: ['#5AA454', '#C7B42C', '#AAAAAA', '#C7B42C'],
   };
 
-  constructor() {
-    Object.assign(this, { multi });
-  }
+  constructor() {}
 
   onSelect(data): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
